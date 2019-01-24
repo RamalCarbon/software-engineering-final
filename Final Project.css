@@ -9,13 +9,13 @@
   grid-gap: .75em;
 }
 
-header{
+.header{
     grid-area: header;
-    background-color: teal;
+    background-color: orange;
 }
 nav{
     grid-area: nav;
-    background-color: tomato;
+    background-color: red;
 }
 main{
     grid-area: main;
@@ -23,7 +23,7 @@ main{
 }
 aside{
     grid-area: aside;
-    background-color: orange;
+    background-color: red;
 }
 footer{
     grid-area: footer;
