@@ -4,20 +4,20 @@ body{
 }
 
 
-.sidebar {
-    padding-left:20px;
-    grid-area: sidebar;
-    background-color: red;
-    border-radius:5%;
-    width: 150px;
-}
+/*.sidebar {*/
+/*    padding-left:20px;*/
+/*    grid-area: sidebar;*/
+/*    background-color: red;*/
+/*    border-radius:5%;*/
+/*    width: 150px;*/
+/*}*/
 
 .content {
     border-radius:5%;
     grid-area: content;
     position: relative;
     background-color: white;
-    padding-left:5%;
+    /*padding-left:5%;*/
     grid-template-columns:1000px;
     height:550px;
 }
@@ -45,7 +45,7 @@ body{
     "footer  footer  footer";
     }
     
-#h{
+h1{
     color:white;
 }
 
@@ -59,6 +59,6 @@ body{
 
 }
 
-input{
-    width:300px;
-}
+/*input{*/
+/*    width:300px;*/
+/*}*/
