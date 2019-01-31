@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Payment</title>
+        <link rel="stylesheet" type="text/css" href="payment.css" />
+	</head>
+	
+	<body>
+		<div class="container">
+			<header>
+				<h1><a href="homepage.html"><img src="spot.jpg" class= "img_spot" alt="spot"></a> The Spot Sports Bar and Grill</h1> 
+			</header>
+	    	
+	    	<nav>
+				<a href="homepage.html"><p class = "nav_text">Home</p></a><br/>
+				<a href="order.html"><p class = "nav_text">Place order</p></a><br/>
+				<a href="menu.html"><p class = "nav_text">Menu</p></a><br/>
+				<a href="/views/newJob.view.php"><p class = "nav_text">Contact us</p></a><br/>
+				<a href="sign up.html"><p class = "nav_text">Sign up</p></a></br>
+				<a href="order status.html"><p class = "nav_text">Check Order Status</p></a></br>
+				<a href="/scripts/php/logout.php"><p class = "nav_text">Affiliates</p></a></br>
+				<a href="log in.html"><p class = "nav_text">log in</p></a>
+	    	</nav>
+			
+			<main class = "form_input">
+				<form name="createUser" method="post" action="PaymentDB.php">
+				     
+				    <h2>Enter your card information to pay</h2>
+				    
+				    <p>Name on Card:</p>
+				    <input class="text" type="text" name="Name" required/><br/><br/>
+				    
+				    
+				    <p>Card Number:</p>
+				    <input class="number" type="text" name="Cnumber" required/><br/><br/>
+				    
+				    <p>Expiration Date:</p>
+				    <input class="date" type="text" name="Exp" required/><br/><br/>
+				    
+				    <p>CVC:</p>
+				    <input class="number" type="text" name="Cvc" required/><br/><br/>
+	    
+	    			<input class="ssubmit" type="submit" value="Pay"/>
+				</form>  
+			</main>
+			
+			<footer>
+				© 2019, The Spot Sports Bar and Grill, Inc. or its affiliates. All rights reserved.
+			</footer>
+		</div>

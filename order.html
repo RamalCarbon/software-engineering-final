@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Order</title>
+        <link rel="stylesheet" type="text/css" href="order.css" />
+	</head>
+	
+	<body>
+		<div class="container">
+			<header>
+				<h1><a href="homepage.html"><img src="spot.jpg" class= "img_spot" alt="spot"></a> The Spot Sports Bar and Grill</h1>
+			</header>
+	    	
+	    	<nav>
+				<a href="homepage.html"><p class = "nav_text">Home</p></a><br/>
+				<a href="order.html"><p class = "nav_text">Place order</p></a><br/>
+				<a href="menu.html"><p class = "nav_text">Menu</p></a><br/>
+				<a href="/views/newJob.view.php"><p class = "nav_text">Contact us</p></a><br/>
+				<a href="sign up.html"><p class = "nav_text">Sign up</p></a></br>
+				<a href="order status.html"><p class = "nav_text">Check Order Status</p></a></br>
+				<a href="/scripts/php/logout.php"><p class = "nav_text">Affiliates</p></a></br>
+				<a href="log in.html"><p class = "nav_text">log in</p></a>
+	    	</nav>
+			
+			<main class = "form_input">
+				<form name="createUser" method="post" action="OrderDB.php">
+				    
+				    <h2>Define Your Order<h2></h2></br>
+				    
+				    <p>Selection 1</p></br>
+				    <select name= "s1">
+				    	<option>None</option>
+				    	<option>Rice and Peas</option>
+				    	<option>Pumpkin Rice</option>
+				    	<option>Calaloo Rice</option>
+				    	<option>White rice</option>
+				    </select>
+				    
+				    <p>Selection 2</p></br>
+				    <select name= "s2">
+				    	<option>None</option>
+				    	<option>Stew Chicken </option>
+				    	<option>Curry Chicken</option>
+				    	<option>Curry Goat</option>
+				    	<option>Stew Beef</option>
+				    	<option>Akee and Saltfish</option>
+				    	<option>Baked Chicken</option>
+				    	<option>Barbi-Fry Chicken</option>
+				    	<option>Chicken Stew Peas</option>
+				    	<option>Fried Chicken</option>
+						<option>Vegi Bowl</option>
+				    </select>
+					
+					<p>Beverages</p></br>
+					<select name= "beverage">
+						<option>None</option>
+						<option>Beer (Must be over 18)</option>
+						<option>Natural juice</option>
+						<option>Alcohol (Must be over 18)</option>
+						<option>Fruit smoothies</option>
+					</select>
+				    
+				    <p>Side Dish (If more than 1 is selected, pay $50 more for each additional side)</p></br>
+				    <select name= "sdish">
+				    	<option>None</option>
+				    	<option>Fried Plantain</option>
+				    	<option>Festival</option>
+				    	<option>Roast Plantain</option>
+				    </select></br>
+				    
+				    <p>Raw Vegetable</p>
+					<select name="Rveg">
+						<option>Yes</option>
+						<option>No</option>
+					</select></br>
+					
+					<p>Steam Vegetable</p>
+					<select name="Sveg">
+						<option>Yes</option>
+						<option>No</option>	
+					</select></br>
+					
+					<p>Pasta Salad</p>
+					<select name="Psalad">
+						<option>Yes</option>
+						<option>No</option>
+					</select></br></br>
+	    
+	    			<input type="submit" class="ssubmit" value="Continue to Payment"/></br>
+					<a href="payment.html">.</a>
+					</form>
+			You must be logged in to your account to be able to place an order. <a href="sign up.html"> Sign up here </a></br>
+			</main>
+			
+			<footer>
+				© 2019, The Spot Sports Bar and Grill, Inc. or its affiliates. All rights reserved.
+			</footer>
+		</div>

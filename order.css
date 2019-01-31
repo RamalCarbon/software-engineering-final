@@ -1,0 +1,69 @@
+.container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto minmax(min-content, 1fr);
+    grid-template-rows: auto minmax(min-content, 1fr) auto;
+    
+    height:100%;
+    grid-template-areas:
+    "header  header  header"
+    "nav main main"
+    "footer  footer  footer";
+}
+
+h1, nav_text{
+	color: white;
+}
+
+.img_spot{
+	width:50px;
+	height:50px;
+}
+
+header{
+    border-radius:5%;
+    grid-area: header;
+    background-color: orange;
+    padding-left:5%;
+    height: 100px;
+}
+nav{
+	border-radius:5%;
+    grid-area: nav;
+    background-color: #C00000;
+}
+main{
+    border-radius:5%;
+    grid-area: main;
+    position: relative;
+    background-color: silver;
+    padding-left:5%;
+    grid-template-columns:1000px;
+    height:auto;
+}
+aside{
+    padding-left:20px;
+    grid-area: sidebar;
+    background-color: red;
+    border-radius:5%;
+    width: 150px;
+}
+footer{
+    grid-area: footer;
+    background-color: white;
+    height: auto;
+}
+
+login{
+  text-align: right;
+}
+
+.text{
+    width:200px;
+}
+
+.ssubmit{
+    background-color:steelblue;
+    width:100px;
+
+}

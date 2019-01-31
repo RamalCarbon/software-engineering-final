@@ -1,0 +1,146 @@
+.container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto minmax(min-content, 1fr);
+    grid-template-rows: auto minmax(min-content, 1fr) auto;
+    
+    height:100%;
+    grid-template-areas:
+    "header  header  header"
+    "nav main main"
+    "footer  footer  footer";
+}
+
+.feedback{
+  width: 70%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+h1{
+	color: white;
+}
+
+.img_spot{
+	width:50px;
+	height:50px;
+}
+
+.img_salad{
+	width: 640px;
+	height: 280;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img_cook_food{
+	width: 340px;
+	height: 180px;
+}
+
+.img_restaurant{
+	width: 790px;
+	height: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right:4%;
+}
+
+.welcome{
+	text-align: center;
+}
+
+.order_now{
+	float: right;
+	font-weight:bold;
+	font-size: 2.5em;
+	color: #C00000;
+	background-color:orange;
+	padding-right:5%;
+}
+
+#login{
+	float:right;
+	font-size: 50%;
+	
+}
+
+header{
+    border-radius:5%;
+    grid-area: header;
+    background-color: orange;
+    padding-left:5%;
+    height: 100px;
+	float: left;
+}
+nav{
+	border-radius:5%;
+    grid-area: nav;
+    background-color: #C00000;
+}
+main{
+    border-radius:5%;
+    grid-area: main;
+    position: relative;
+    background-color: silver;
+    padding-left:5%;
+    grid-template-columns:1000px;
+    height:auto;
+}
+aside{
+    padding-left:20px;
+    grid-area: sidebar;
+    background-color: red;
+    border-radius:5%;
+    width: 150px;
+}
+footer{
+    grid-area: footer;
+    background-color: white;
+    height: auto;
+}
+
+.text{
+    width:200px;
+}
+
+.submit{
+    background-color:steelblue;
+    width:100px;
+}
+
+@-webkit-keyframes spaceboots {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.menu{	
+	float: right;
+	font-weight:bold;
+	font-size: 2.5em;
+	color: #C00000;
+	padding-right:28%;
+	padding-top:10%;
+	display:inline-block;
+	position:relative;
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}

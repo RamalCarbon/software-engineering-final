@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Sign up</title>
+        <link rel="stylesheet" type="text/css" href="sign up.css" />
+	</head>
+	
+	<body>
+		<div class="container">
+			<header>
+				<h1><a href="homepage.html"><img src="spot.jpg" class= "img_spot" alt="spot"></a> The Spot Sports Bar and Grill</h1> 
+			</header>
+	    	
+	    	<nav>
+				<a href="homepage.html"><p class = "nav_text">Home</p></a><br/>
+				<a href="order.html"><p class = "nav_text">Place order</p></a><br/>
+				<a href="menu.html"><p class = "nav_text">Menu</p></a><br/>
+				<a href="place holder .http"><p class = "nav_text">Contact us</p></a><br/>
+				<a href="sign up.html"><p class = "nav_text">Sign up</p></a></br>
+				<a href="order status.html"><p class = "nav_text">Check Order Status</p></a></br>
+				<a href="/scripts/php/logout.php"><p class = "nav_text">Affiliates</p></a></br>
+				<a href="log in.html"><p class = "nav_text">log in</p></a>
+	    	</nav>
+			
+			<main class = "form_input">
+				<form name="createUser" method="post" action="UserDB.php">
+				     
+				    <h2>Sign up</h2>
+				    
+				    <p>First Name:</p>
+				    <input class="text" type="text" id="fname" name="fname" required/><br/><br/>
+	
+				    
+				    <p>Last Name:</p>
+				    <input class="text" type="text" id="lname" name="lname" required/><br/><br/>
+					
+					
+					<p>User Name:</p>
+				    <input class="text" type="text" id="uname" name="uname" required/><br/><br/>
+				    
+				    
+				    <p>Password:</p> 
+	    			<input class="text" type="password" id="pword" name="pword" required/><br/><br/>
+	
+	    			
+	    			<p>Email:</p>
+	    			<input class="text" type="email" id="email" name="email" placeholder="e.g. helpme@nomreschool.com" required/><br/><br/>
+	    			
+	    			
+	    			<p>Telephone:</p>
+	    			<input class="text" type="tel" id="tele" name="tele" placeholder="e.g. 555-555-5555" required/><br/><br/>
+	    
+	    			<input class="ssubmit" type="submit" value="Submit"/>
+				</form>  
+			</main>
+			
+			<footer>
+				© 2019, The Spot Sports Bar and Grill, Inc. or its affiliates. All rights reserved.
+			</footer>
+		</div>
+<html>
